@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/ecommerce/static/css/main.1669ddd6.css",
+    "main.js": "/ecommerce/static/js/main.69dadc80.js",
+    "static/js/488.f3747e4a.chunk.js": "/ecommerce/static/js/488.f3747e4a.chunk.js",
+    "static/media/contact_img.png": "/ecommerce/static/media/contact_img.e07eab916b878014c843.png",
+    "static/media/header_img.png": "/ecommerce/static/media/header_img.a10be241872194ad7ed0.png",
+    "static/media/p_img1.png": "/ecommerce/static/media/p_img1.2ec8683253ece3e580e4.png",
+    "static/media/p_img11.png": "/ecommerce/static/media/p_img11.09f1dad7f2631b80162c.png",
+    "static/media/p_img21.png": "/ecommerce/static/media/p_img21.7f4c0ce5f24b54dd9a71.png",
+    "static/media/p_img13.png": "/ecommerce/static/media/p_img13.31816200303ed2f89abb.png",
+    "static/media/p_img20.png": "/ecommerce/static/media/p_img20.3c616ea45a9f48d01342.png",
+    "static/media/p_img14.png": "/ecommerce/static/media/p_img14.f5c42bffc05ea44f1ec7.png",
+    "static/media/p_img10.png": "/ecommerce/static/media/p_img10.2cbd97f73f8e30f0fa31.png",
+    "static/media/p_img16.png": "/ecommerce/static/media/p_img16.6ffe2a462ea26a45bb32.png",
+    "static/media/short_Logo.png": "/ecommerce/static/media/short_Logo.dc2c46b1c6a6ac42b603.png",
+    "static/media/p_img12.png": "/ecommerce/static/media/p_img12.4fde1d1bd47c4e6c8061.png",
+    "static/media/p_img19.png": "/ecommerce/static/media/p_img19.6ad32ac8cc3f957da309.png",
+    "static/media/p_img15.png": "/ecommerce/static/media/p_img15.6b5d92428b76794e1f2e.png",
+    "static/media/p_img18.png": "/ecommerce/static/media/p_img18.f7007d38141933da8a03.png",
+    "static/media/p_img17.png": "/ecommerce/static/media/p_img17.f3ae47674d667aecc3b7.png",
+    "static/media/logo.png": "/ecommerce/static/media/logo.17b5321f23bb07c931bb.png",
+    "index.html": "/ecommerce/index.html",
+    "main.1669ddd6.css.map": "/ecommerce/static/css/main.1669ddd6.css.map",
+    "main.69dadc80.js.map": "/ecommerce/static/js/main.69dadc80.js.map",
+    "488.f3747e4a.chunk.js.map": "/ecommerce/static/js/488.f3747e4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1669ddd6.css",
+    "static/js/main.69dadc80.js"
+  ]
+}
