@@ -1,0 +1,210 @@
+/* Ensure container has margin on both sides */
+.collection-container {
+    display: flex;
+    margin: 0 15px; /* Add margin to both sides */
+    gap: 30px;
+  }
+  
+  .filter-box {
+    width: 250px; /* Fixed width for filter box */
+    position: sticky; /* Fix the filter box */
+    top: 20px; /* Add some top space */
+    background-color: #fff; /* White background for better visibility */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
+    border-radius: 8px;
+  }
+  
+  .filter-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1; /* Makes the main content take the remaining space */
+  }
+  
+  /* Sort Box */
+  .sort-box {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sort-box select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  /* Product Grid */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .product-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hover effect */
+    transform: translateY(-5px);
+  }
+  
+  .product-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-details {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .load-more-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .load-more-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .filter-box {
+    width: 250px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 20px);
+  }
+  
+  .filter-box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .filter-item {
+    margin-bottom: 15px;
+  }
+  
+  .filter-item label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .filter-item select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .filter-item select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .filter-item select option {
+    font-size: 14px;
+    padding: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-box {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin-bottom: 20px;
+    }
+  }
+  
+   
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .collection-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%; /* Full width on mobile */
+      border-right: none; /* Remove the border */
+      padding: 10px;
+    }
+  
+    .main-content {
+      width: 100%; /* Full width */
+      padding: 10px;
+    }
+  
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two rows on mobile, grid with 2 columns */
+    }
+  
+    .product-item {
+      padding: 8px; /* Slightly smaller padding */
+    }
+  
+    .sort-box {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .load-more-btn {
+      width: 100%; /* Full-width button */
+    }
+  
+    .apply-btn {
+      width: 100%; /* Full-width button */
+    }
+  }
+  
+  /* Mobile Small Devices (Portrait Tablets, Phones) */
+  @media (max-width: 480px) {
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr); /* Still 2 columns, mini desktop view */
+    }
+  
+    .product-item {
+      padding: 5px; /* Smaller padding */
+    }
+  
+    .sort-box {
+      font-size: 14px;
+    }
+  
+    .load-more-btn {
+      padding: 12px;
+    }
+  
+    .apply-btn {
+      padding: 12px;
+    }
+  }
+  

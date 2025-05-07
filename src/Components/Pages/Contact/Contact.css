@@ -1,0 +1,95 @@
+/* Full Component */
+.contact-container {
+    background-color: white;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Two-Column Layout */
+  .contact-content {
+    display: flex;
+    max-width: 1000px;
+    width: 90%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left Side - Image */
+  .contact-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-left img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Right Side - Contact Details */
+  .contact-right {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contact-right h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+    line-height: 1.6;
+    padding: 3px;
+  }
+  
+  .explore-jobs {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .explore-jobs:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contact-left img {
+      max-width: 300px;
+    }
+  
+    .contact-right {
+      padding: 15px;
+    }
+  
+    .contact-info p {
+      font-size: 14px;
+    }
+  
+    .explore-jobs {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  

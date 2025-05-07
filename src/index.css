@@ -1,0 +1,14 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Futura", "Times", serif !important; /* Choose a global font */
+    background-color: #f4f4f4;  /* Set a default background color */
+    color: #333;  /* Set a default text color */
+    line-height: 1.6;
+  }
+  

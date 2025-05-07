@@ -1,0 +1,124 @@
+/* Main Cart Container */
+.Cartmain {
+  padding: 30px;
+  background-color: #fafafa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cart Title */
+.Cartmain h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Cart Items */
+.cart-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* White background */
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; 
+}
+
+.cart-img {
+  max-width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-info {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.product-info h3 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.product-info p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.product-info button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-info button:hover {
+  background-color: #c0392b;
+}
+
+/* Cart Footer */
+.cart-footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+.cart-footer .total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.cart-footer .checkout-btn {
+  background-color: #2ecc71;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-footer .checkout-btn:hover {
+  background-color: #27ae60;
+}
+
+/* Empty Cart Message */
+.empty-cart {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #777;
+}
+
+/* Cart Notification on Navbar */
+.navbar-cart-icon {
+  position: relative;
+}
+
+.cart-notification {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

@@ -1,0 +1,163 @@
+/* Main Container */
+.Bottommain {
+    background-color: white;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+/* Bottom Section */
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ 
+}
+.bottom .block1 img, .bottom .block2 img, .bottom .block3 img {
+    background-color: white;
+    width: 50px; /* Adjust icon size */
+    height: auto;
+}
+
+/* Individual Blocks */
+.block1, .block2, .block3 {
+    width: 300px;  /* Adjusted for consistency */
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+    background-color: white;
+}
+
+.block1:hover, .block2:hover, .block3:hover {
+    transform: scale(1.05);
+}
+
+/* Icons */
+.block1 img, .block2 img, .block3 img {
+    width: 50px; /* Reduced Icon Size */
+    height: auto;
+    /* margin-bottom: 10px; */
+}
+
+
+/*  */
+.SUBSCRIBEbutton {
+    padding-top: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 25px auto;
+    color: black;
+    font-size: small;
+
+    h2{
+        font-size: small;
+
+    }
+
+}
+
+.SUBSCRIBEbutton h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.subscribe-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.subscribe-input input {
+    width: 75%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #808080;
+    outline: none;
+    background: white;
+    color: #333;
+    font-weight: bold;
+}
+
+.subscribe-input button {
+    padding: 16px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background: #000000;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.subscribe-input button:hover {
+    background: #ffeb3b;
+    color: #000;
+    box-shadow: 0px 5px 15px rgba(255, 235, 59, 0.7);
+    transform: translateY(-2px);
+}
+
+.SUBSCRIBEbutton small {
+    background-color: white;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #666666;
+    opacity: 0.9;
+}
+
+
+
+
+/* === Mobile View === */
+
+@media (max-width: 768px) {
+  
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .bottom .block1, .bottom .block2, .bottom .block3 {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    /* Adjust the icon size */
+    .bottom .block1 img, .bottom .block2 img, .bottom .block3 img {
+        width: 35px;
+        height: auto;
+    }
+
+    /* Subscribe Button (Input and Button) */
+    .SUBSCRIBEbutton {
+        padding: 25px;
+        margin: 12px px;
+        width: 100%;
+    }
+
+    .SUBSCRIBEbutton h2 {
+        font-size: 1.2rem;
+    }
+
+    .subscribe-input input {
+        width: 65%;
+        font-size: 0.7rem;
+    }
+
+    .subscribe-input button {
+        padding: 6px 5px;
+        font-size: 0.9rem;
+    }
+}

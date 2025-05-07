@@ -1,0 +1,177 @@
+/* ====================
+   Base Navbar Styles
+==================== */
+.navbar {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 10px;
+}
+
+/* ====================
+   Logo
+==================== */
+.navbar-left img {
+  height: 40px;
+  margin: 0;
+}
+
+/* ====================
+   Center Navigation (Desktop)
+==================== */
+.navbar-center {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-center {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-family: "Futura", "Times", serif;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* ====================
+   Right Side Icons
+==================== */
+.navbar-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar-right .icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* ====================
+   Hamburger Menu
+==================== */
+.hamburger {
+  display: none;
+  height: 18px;
+  width: 18px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.hamburger img {
+  height: 20px;
+  width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-left img {
+    height: 28px;
+    width: 120px;
+  }
+
+  .navbar-right {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    gap: 1rem;
+  }
+
+  .navbar-right .icon {
+    height: 14px;
+    width: 14px;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 3px;
+  }
+
+  /* ====================
+     Mobile Dropdown Menu
+  ==================== */
+  .mobile-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 100;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .mobile-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .mobile-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-family: "Futura", "Times", serif;
+    text-align: center;
+  }
+}
+
+/* Hide mobile elements on larger screens */
+@media (min-width: 768px) {
+  .mobile-menu,
+  .hamburger {
+    display: none !important;
+  }
+}
+
+/* ====================
+   Cart Notification Badge
+==================== */
+.cart-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.cart-notification {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
