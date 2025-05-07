@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   useLocation,
@@ -16,7 +16,7 @@ import { Contact } from "./Components/Pages/Contact/Contact";
 import Collection from "./Components/Pages/Collection/Collection";
 import ProductPage from "./Components/Pages/Productpage/ProductPage";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
-import Cart from "./Components/Pages/Productpage/Cart/Cart";  // Fixed import path
+import Cart from "./Components/Pages/Productpage/Cart/Cart"; // Fixed import path
 import { CartProvider } from "../src/context/CartContext";
 // import adminuser from "../src/Components/admin/adminuser";
 import Payment from "./Components/Pages/Payment/Payment";
@@ -33,7 +33,7 @@ function AppContent() {
 
   return (
     <div>
-       {/* <div className="App">
+      {/* <div className="App">
       {showBanner && <WelcomeBanner />}
      
     </div> */}
@@ -45,14 +45,12 @@ function AppContent() {
         <Route path="/product/:productId" element={<ProductPage />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/about" element={<About />} /> {/* Moved inside Routes */}
-        <Route path="/contact" element={<Contact />} /> {/* Moved inside Routes */}
-        <Route  path="/user" element={<User/>}/>
-        <Route  path="/payment" element={<Payment/>}/>
-
-
+        <Route path="/contact" element={<Contact />} />{" "}
+        {/* Moved inside Routes */}
+        <Route path="/user" element={<User />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
 
-    
       {location.pathname === "/" && <Bottom />}
 
       <Footer />
@@ -62,7 +60,7 @@ function AppContent() {
 
 function App() {
   return (
-    <CartProvider> 
+    <CartProvider>
       <Router>
         <AppContent />
       </Router>
